@@ -28,14 +28,18 @@
 
 //------------FUNKCJE-----------
 void setMotors(void);//ustawia piny silnikach
-void motorL(int16_t pulse_width);//zadaje wypelnienie PWM (-500,500)
-void motorR(int16_t pulse_width);//zadaje wypelnienie PWM (-500,500)
+void motorL(float pulse_width);//zadaje wypelnienie PWM (-500,500)
+void motorR(float pulse_width);//zadaje wypelnienie PWM (-500,500)
 void OscXtal(void);
-void setall(void);//ustawia wszystko
+void setbat(void);
+void Osc32MHz(void);
+void set_leds(void);
+void set_switches(void);
+void set_encoders(void);
+void set_main_interrupts(void);
 
 void ledYellow(void);
 void ledGreen(void);
-void setbat(void);
-void Osc32MHz(void);
+
 
 #endif /* CONFIG_H_ */
